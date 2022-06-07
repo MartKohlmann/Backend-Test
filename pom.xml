@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>nl.hu.bep.shopping</groupId>
-    <artifactId>BigShopper</artifactId>
+    <artifactId>Backend-Test</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>BigShopper</name>
+    <name>Backend-Test</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
