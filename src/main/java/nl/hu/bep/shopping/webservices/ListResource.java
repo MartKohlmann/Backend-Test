@@ -61,7 +61,7 @@ public class ListResource {
 
     @PUT
     @Path("reset")
-    @RolesAllowed("user")
+    @RolesAllowed({"user", "admin"})
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public Response resetShoppinglist(@Context SecurityContext sc, PostShoppinglistRequest shoppinglistRequest){
