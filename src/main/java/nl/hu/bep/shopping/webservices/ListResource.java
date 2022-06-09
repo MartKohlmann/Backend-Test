@@ -69,6 +69,7 @@ public class ListResource {
             MyUser current = (MyUser) sc.getUserPrincipal();
             List shoppingLists = Shop.getShop().getListFromPerson(current.getName());
 //            shoppingLists.resetLis    t();
+            shoppingLists.remove(Shop.getShop().getShoppingListByName(shoppinglistRequest.name));
             return Response.ok(shoppingLists).build();
 
         }
