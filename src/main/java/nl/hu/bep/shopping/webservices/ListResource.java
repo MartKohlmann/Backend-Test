@@ -70,6 +70,8 @@ public class ListResource {
             List shoppingLists = Shop.getShop().getListFromPerson(current.getName());
 //            shoppingLists.resetLis    t();
             shoppingLists.remove(Shop.getShop().getShoppingListByName(shoppinglistRequest.name));
+            System.out.println(shoppingLists);
+            System.out.println(shoppinglistRequest);
             return Response.ok(shoppingLists).build();
 
         }
